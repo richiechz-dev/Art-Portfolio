@@ -1,0 +1,132 @@
+/* Global Styles */
+* {
+  margin: 0;
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", system-ui;
+  height: 100vh;
+  width: 100vw;
+  /* background: rgb(245,232,30);
+    background: linear-gradient(0deg, rgba(245,232,30,1) 40%, rgba(241,178,21,1) 60%); */
+  background: rgb(245, 232, 30);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 232, 30, 1) 50%,
+    rgba(241, 178, 21, 1) 50%
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+/* Estilo general del menú */
+.menu {
+  list-style: none;
+  padding: 10px;
+}
+
+.menu-item {
+  position: relative; /* Necesario para posicionar el submenú */
+  width: 300px;
+  
+}
+
+.menu a {
+  font-weight: 700;
+  color: #261201e5;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: block;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #f5e71e33;
+  transform: scale(1.2);
+}
+
+/* Estilo del submenú */
+.submenu {
+  list-style: none;
+  position: absolute;
+  width: 300px;
+  top: 100%; /* Aparece justo debajo del enlace "Gallery" */
+  left: 0;
+  padding: 10px 0;
+  text-transform: uppercase;
+
+  /* Inicialmente oculto con transparencia y desplazado hacia arriba */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.2s ease, transform 0.5s ease;
+  pointer-events: none; /* Desactiva los clics cuando está oculto */
+}
+
+.submenu li a {
+  padding: 5px 20px;
+  display: block;
+  color: #261201;
+}
+
+.submenu li a:hover {
+  background-color: #f5e71e33;
+  transform: scale(1.2);
+}
+
+/* Mostrar submenú cuando se activa */
+.submenu--visible {
+  opacity: 1; /* Hace visible el submenú */
+  transform: translateY(0); /* Lo coloca en su posición original */
+  pointer-events: auto; /* Activa los clics */
+}
+
+/* Titulo expandible */
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 16px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 70px; /* Inicialmente mostrar solo el texto corto */
+}
+
+h1 .short {
+  color: #261201e5;
+  display: block;
+}
+
+h1 .full {
+  color: #261201e5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  opacity: 0;
+  text-transform: uppercase;
+  transition: opacity 0.5s ease, width 0.5s ease;
+}
+
+/* Al hacer hover, expandir el título completo */
+h1:hover {
+  width: 150px; /* Ajusta el ancho al texto completo */
+}
+
+h1:hover .full {
+  opacity: 1;
+}
+
+h1:hover .short {
+  opacity: 0;
+}
