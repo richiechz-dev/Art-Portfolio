@@ -4,35 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SuricatoCult Porfolio</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- SEO TAGS -->
+    <meta name="title" content="Suricato Cult - Porfolio">
+    <meta name="description" content="Website of  the Artist SuricatoCult. Creator of this website and the portraits, etc.">
+    <meta name="keywords" content="SuricatoCult, Art, Draw, ArtDigital, Cerati, Amarillo">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Spanish">
+    
+    <link rel="shortcut icon" href="assets/logo/banana_type02.svg" type="icon/svg">
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-          <ul class="menu">
-              <li class="menu-item"><a href="#">01. Gallery</a>
-                  <ul class="submenu"> <!-- Submenú oculto -->
-                      <li><a href="#">02. Contact</a></li>
-                      <li><a href="#">03. Instagram</a></li>
-                  </ul>
-              </li>
-          </ul>
-      </nav>
-      
-      <section class="profile">
-        <h1 class="expandable-title">
-          <span class="short">SC</span>
-          <span class="full">Suricato Cult</span>
-        </h1>
-      </section>
+    <section class="album-background">
+      <div class="dot"></div>
+      <header class="header">
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">01. Gallery</a>
+                    <ul class="submenu"> <!-- Submenú oculto -->
+                        <li><a href="Contact.html">02. Contact</a></li>
+                        <li><a href="https://www.instagram.com/suricatocult/" target="_blank">03. Instagram</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+        <section class="profile">
+          <h1 class="expandable-title">
+            <span class="short">CERATI</span>
+            <span class="full">Suricato Cult</span>
+          </h1>
+        </section>
+    </section>
     </header>
 
-    <script src="main.js"></script>
+    <main hidden>
+      <section class="carrusel">
+        <figure class="img-gallery">
+          <img src="assets/Carrusel/IMG_20241005_115913_165.jpg" alt="" class="image">
+          <figcaption>Sticky Note</figcaption>
+        </figure>
+        <figure class="img-gallery">
+          <img src="assets/Carrusel/IMG_20241005_115913_165.jpg" alt="" class="image">
+          <figcaption>Sticky Note</figcaption>
+        </figure>
+        <figure class="img-gallery">
+          <img src="assets/Carrusel/IMG_20241005_115913_165.jpg" alt="" class="image">
+          <figcaption>Sticky Note</figcaption>
+        </figure>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
   </body>
 </html>
