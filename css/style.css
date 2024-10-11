@@ -35,6 +35,10 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+.song-title a {
+  text-decoration: underline;
+  color: #261201;
+}
 .date-title {
   font-size: 1rem;
   font-weight: lighter;
@@ -63,10 +67,10 @@ body {
 
 .dot {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 44%;
-  left: 45%;
+  width: 65px;
+  height: 65px;
+  top: 45%;
+  left: 46%;
   /* style 1
   border-radius: 50%;
   background: #e0e0e0;
