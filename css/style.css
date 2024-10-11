@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global Styles */ 
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,34 @@ body {
   align-items: center;
   background-color: #ecebe0;
 }
+
+.view-1{
+  display: flex;
+  width: 100%;
+}
+
+.child {
+  flex: 1;
+  padding: 20px 40px;
+}
+.child.middle {
+  flex: 2;
+}
+
+/* about component */
+.about {
+  align-content: center;
+}
+.song-title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.date-title {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
 
 /* Album-Component */
 .album-background {
@@ -28,7 +56,7 @@ body {
   box-shadow: -30px 30px 60px #929292, 30px -30px 60px #ffffff;
  */
   margin-top: 2rem;
-  border-radius: 25px;
+  border-radius: 18px;
   box-shadow: -20px 20px 30px #969696, 20px -20px 30px #ffffff;
   position: relative;
 }
@@ -38,7 +66,7 @@ body {
   width: 80px;
   height: 80px;
   top: 44%;
-  left: 43%;
+  left: 45%;
   /* style 1
   border-radius: 50%;
   background: #e0e0e0;
@@ -48,6 +76,16 @@ body {
   border-radius: 145px;
   background: #e0e0e0;
   box-shadow: inset -5px 5px 9px #898989, inset 5px -5px 9px #ffffff;
+}
+/* Song Component */
+.song {
+  align-content: flex-end;
+}
+.song ul{
+  list-style-type: none;
+}
+.song ul li {
+  letter-spacing: 1px;
 }
 
 .header {
@@ -146,7 +184,7 @@ h1 .full {
   white-space: nowrap;
   opacity: 0;
   text-transform: uppercase;
-  transition: opacity 0.5s ease, width 0.5s ease;
+  transition: opacity .5s ease, width .5s ease;
 }
 
 /* Al hacer hover, expandir el título completo */
