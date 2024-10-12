@@ -1,8 +1,9 @@
-/* Global Styles */ 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -11,9 +12,10 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #ecebe0;
-}
 
-.view-1{
+  }
+
+.view-1 {
   display: flex;
   width: 100%;
 }
@@ -22,8 +24,11 @@ body {
   flex: 1;
   padding: 20px 40px;
 }
-.child.middle {
+.child-middle {
   flex: 2;
+  /*background: url('../assets/Granulado/Grano-Pelicula-01.jpg'); /* Imagen de ruido */
+  /* background-size: cover; */
+  /* filter: blur(0.5px) brightness(1.2); Ajusta para más efecto */
 }
 
 /* about component */
@@ -44,7 +49,6 @@ body {
   font-weight: lighter;
 }
 
-
 /* Album-Component */
 .album-background {
   height: 90vh;
@@ -63,8 +67,9 @@ body {
   border-radius: 18px;
   box-shadow: -20px 20px 30px #969696, 20px -20px 30px #ffffff;
   position: relative;
-}
 
+}
+ 
 .dot {
   position: absolute;
   width: 65px;
@@ -85,7 +90,7 @@ body {
 .song {
   align-content: flex-end;
 }
-.song ul{
+.song ul {
   list-style-type: none;
 }
 .song ul li {
@@ -188,7 +193,7 @@ h1 .full {
   white-space: nowrap;
   opacity: 0;
   text-transform: uppercase;
-  transition: opacity .5s ease, width .5s ease;
+  transition: opacity 0.5s ease, width 0.5s ease;
 }
 
 /* Al hacer hover, expandir el título completo */
@@ -219,5 +224,15 @@ h1:hover .short {
 /* main */
 
 main {
-  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.interlude, .contact {
+  height: 50vh;
+  width: 80%;
+  padding: 20px;
 }
