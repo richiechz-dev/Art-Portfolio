@@ -3,17 +3,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+
 body {
+  scroll-behavior: smooth;
+
   font-family: "Rubik", system-ui;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ecebe0;
-
-  }
+  /* background-color: #ecebe0; */
+  background-color: whitesmoke;
+  gap: 4rem;
+}
 
 .view-1 {
   display: flex;
@@ -26,9 +34,9 @@ body {
 }
 .child-middle {
   flex: 2;
-  /*background: url('../assets/Granulado/Grano-Pelicula-01.jpg'); /* Imagen de ruido */
-  /* background-size: cover; */
-  /* filter: blur(0.5px) brightness(1.2); Ajusta para más efecto */
+  background: url('../assets/Granulado/Grano-Pelicula-01.jpg'); /* Imagen de ruido */
+  background-size: cover; 
+  filter: blur(0.5px) brightness(1.2); /* Ajusta para más efecto */
 }
 
 /* about component */
@@ -41,6 +49,10 @@ body {
   margin-bottom: 10px;
 }
 .song-title a {
+  text-decoration: none;
+  color: #261201;
+}
+.song-title a:hover {
   text-decoration: underline;
   color: #261201;
 }
@@ -64,12 +76,11 @@ body {
   box-shadow: -30px 30px 60px #929292, 30px -30px 60px #ffffff;
  */
   margin-top: 2rem;
-  border-radius: 18px;
+  border-radius: 15px;
   box-shadow: -20px 20px 30px #969696, 20px -20px 30px #ffffff;
   position: relative;
-
 }
- 
+
 .dot {
   position: absolute;
   width: 65px;
@@ -227,12 +238,47 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
   width: 100%;
+  gap: 2rem;
 }
 
-.interlude, .contact {
+.interlude {
+  width: 80%;
   height: 50vh;
+  padding: 20px;
+}
+
+.contact {
+  height: 60vh;
   width: 80%;
   padding: 20px;
 }
+
+/* contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contact p a{
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  color: #261201;
+}
+.contact p a:hover {
+  text-decoration: none;
+}
+
+.footer {
+  padding: 20px;
+}
+
