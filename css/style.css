@@ -220,17 +220,29 @@ h1:hover .short {
   opacity: 0;
 }
 
-.carrusel {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow: scroll;
+/* Gallery */
+.gallery-grid {
+  max-width: 1140px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 250px;
+  gap: 20px;
+  padding: 20px 0;
 }
-.image {
-  flex: 1 0 auto;
-  margin: 0 50px;
-  width: 500px;
-  height: 500px;
+
+.img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+.img:nth-child(1){
+  grid-column-start: span 3;
+}
+.img:nth-child(4){
+  grid-column-start: span 2;
+}
+
 
 /* main */
 
@@ -244,11 +256,17 @@ main {
 
 .interlude {
   width: 80%;
-  height: 50vh;
+  height: 30vh;
+  padding: 20px;
+}
+.gallery{
+  width: 80%;
+  height: 20vh;
   padding: 20px;
 }
 
 .contact {
+  margin-top: 70px;
   height: 60vh;
   width: 80%;
   padding: 20px;
