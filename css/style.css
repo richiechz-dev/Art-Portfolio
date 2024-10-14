@@ -364,6 +364,7 @@ main {
   .interlude img {
     margin: 10px auto;
     margin-top: 40px;
+    width: 50%;
   }
 
   .gallery {
@@ -371,6 +372,7 @@ main {
   }
 
   .gallery-grid {
+    margin: 0 40px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
