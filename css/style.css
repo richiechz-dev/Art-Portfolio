@@ -256,8 +256,17 @@ main {
 
 .interlude {
   width: 80%;
-  height: 30vh;
+  height: 100vh;
   padding: 20px;
+}
+
+.interlude img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.text-size-p {
+  font-size: 1.3rem;
 }
 .gallery{
   width: 80%;
@@ -280,13 +289,13 @@ main {
 }
 
 .contact p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
 .contact p a{
   display: block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-decoration: underline;
   transition: color 0.3s ease;
@@ -300,3 +309,73 @@ main {
   padding: 20px;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+  
+  .view-1 {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .child {
+    padding-top: 40px;
+  }
+
+  .album-background {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .album-background .header {
+    display: flex;
+    width: 100%;
+  } 
+  .album-background .nav a{
+    width: 40%;
+  }
+
+  .dot {
+    width: 2rem;
+    height: 2rem;
+    top: 45%;
+    left: 46%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .song-title {
+    font-size: 1.5rem;
+  }
+
+  .interlude {
+    height: fit-content;
+
+  }
+
+  .interlude img {
+    margin: 10px auto;
+    margin-top: 40px;
+  }
+
+  .gallery {
+    height: fit-content;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .contact {
+    height: auto;
+  }
+  .contact p a {
+    font-size: 1rem;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+}
