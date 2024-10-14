@@ -264,6 +264,8 @@ main {
   width: 50%;
   display: block;
   margin: 0 auto;
+  margin-top: 60px;
+  width: 30%;
 }
 .text-size-p {
   font-size: 1.3rem;
@@ -367,6 +369,7 @@ main {
   .interlude img {
     margin: 10px auto;
     margin-top: 40px;
+
   }
 
   .gallery {
