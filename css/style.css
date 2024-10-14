@@ -10,7 +10,6 @@ html {
   scrollbar-width: none;
 }
 
-
 body {
   scroll-behavior: smooth;
 
@@ -34,8 +33,8 @@ body {
 }
 .child-middle {
   flex: 2;
-  background: url('../assets/Granulado/Grano-Pelicula-01.jpg'); /* Imagen de ruido */
-  background-size: cover; 
+  background: url("../assets/Granulado/Grano-Pelicula-01.jpg"); /* Imagen de ruido */
+  background-size: cover;
   filter: blur(0.5px) brightness(1.2); /* Ajusta para más efecto */
 }
 
@@ -231,18 +230,17 @@ h1:hover .short {
   padding: 20px 0;
 }
 
-.img img{
+.img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.img:nth-child(1){
+.img:nth-child(1) {
   grid-column-start: span 3;
 }
-.img:nth-child(4){
+.img:nth-child(4) {
   grid-column-start: span 2;
 }
-
 
 /* main */
 
@@ -270,7 +268,7 @@ main {
 .text-size-p {
   font-size: 1.3rem;
 }
-.gallery{
+.gallery {
   width: 80%;
   height: 20vh;
   padding: 20px;
@@ -295,7 +293,7 @@ main {
   font-weight: 600;
 }
 
-.contact p a{
+.contact p a {
   display: block;
   font-size: 1.5rem;
   font-weight: 600;
@@ -313,7 +311,6 @@ main {
 
 /* Media Queries */
 @media (max-width: 768px) {
-  
   .view-1 {
     flex-direction: column;
     width: 100vw;
@@ -328,7 +325,6 @@ main {
     width: 80%;
     height: 35vh;
     margin: 20px auto;
-
   }
   .child-middle {
     flex: none;
@@ -338,11 +334,11 @@ main {
     display: flex;
     justify-content: flex-end;
     width: 88vw;
-  } 
+  }
   .album-background .nav {
     display: none;
   }
-  .album-background .nav a{
+  .album-background .nav a {
     width: 40%;
   }
 
@@ -363,13 +359,11 @@ main {
 
   .interlude {
     height: fit-content;
-
   }
 
   .interlude img {
     margin: 10px auto;
     margin-top: 40px;
-
   }
 
   .gallery {
@@ -384,7 +378,6 @@ main {
   .post-title {
     font-style: italic;
     padding: 20px;
-    
   }
   .contact {
     height: auto;
