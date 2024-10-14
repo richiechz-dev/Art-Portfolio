@@ -49,11 +49,11 @@ body {
   margin-bottom: 10px;
 }
 .song-title a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #261201;
 }
 .song-title a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: #261201;
 }
 .date-title {
@@ -315,7 +315,6 @@ main {
   .view-1 {
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
   }
 
   .child {
@@ -324,13 +323,22 @@ main {
 
   .album-background {
     width: 80%;
+    height: 35vh;
     margin: 20px auto;
+
+  }
+  .child-middle {
+    flex: none;
   }
 
   .album-background .header {
     display: flex;
-    width: 100%;
+    justify-content: flex-end;
+    width: 88vw;
   } 
+  .album-background .nav {
+    display: none;
+  }
   .album-background .nav a{
     width: 40%;
   }
@@ -342,7 +350,7 @@ main {
     left: 46%;
   }
   .header {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
