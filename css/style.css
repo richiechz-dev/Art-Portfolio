@@ -265,6 +265,12 @@ main {
   margin-top: 60px;
   width: 30%;
 }
+.interlude .logo-suricato {
+  width: 45%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+}
 .text-size-p {
   font-size: 1.3rem;
 }
