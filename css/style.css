@@ -258,15 +258,16 @@ main {
   padding: 20px;
 }
 
-.interlude img {
+/* .interlude img {
   width: 50%;
   display: block;
   margin: 0 auto;
   margin-top: 60px;
   width: 30%;
-}
+} */
+
 .interlude .logo-suricato {
-  width: 45%;
+  width: 50%;
   display: block;
   margin: 0 auto;
   margin-top: 60px;
@@ -367,10 +368,10 @@ main {
     height: fit-content;
   }
 
-  .interlude img {
+  .interlude .logo-suricato {
     margin: 10px auto;
     margin-top: 40px;
-    width: 50%;
+    width: 100%;
   }
 
   .gallery {
