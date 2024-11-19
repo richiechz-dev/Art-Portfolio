@@ -330,7 +330,7 @@ main {
 
   .album-background {
     width: 90vw;
-    height: 40vh;
+    height: 44vh;
     margin: 20px auto;
   }
   .child-middle {
@@ -340,7 +340,6 @@ main {
   .album-background .header {
     display: flex;
     justify-content: flex-end;
-    width: 81vw;
     padding: 20px 10px;
   }
   .album-background .nav {
